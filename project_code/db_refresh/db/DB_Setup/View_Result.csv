@@ -1,0 +1,17 @@
+a.member_id,a.activity_year_month,member_lifecycle_status,lapsed_month
+1001,201701,New,0
+1001,201705,Retained,0
+1001,201706,Retained,0
+1001,201709,Retained,0
+1001,201712,Retained,0
+1002,201703,New,0
+1002,201704,Retained,0
+1002,201708,Retained,0
+1002,201709,Retained,0
+1003,201707,Lapsed,1
+1004,201701,New,0
+1004,201705,Retained,0
+1004,201706,Unretained,0
+1004,201709,Lapsed,1
+1004,201710,Lapsed,2
+1004,201712,Reactivated,0
