@@ -12,11 +12,13 @@ customer Status who play games online with wager money ( python + sqlite + flask
           LAPSED_MONTHS
 
 The view should display one row per member per month, starting from the month in which they first placed a real money wager. 
-This view should give their lifecycle status for that month, and if the member has lapsed, it should show a rolling count of the number of months since they were last active.
+This view should give their lifecycle status for that month, and if the member has lapsed, 
+it should show a rolling count of the number of months since they were last active.
 
 Active means that the member has made a minimum of one real money wager in the month.
 
-Each month a member has a certain lifecycle type. The member’s status will change on a monthly basis based on their previous and current month's activity. The statuses are:
+Each month a member has a certain lifecycle type. The member’s status will change on a monthly basis based on their previous and current month's activity. 
+The statuses are:
 
 
     New		= First time they place a real money wager
