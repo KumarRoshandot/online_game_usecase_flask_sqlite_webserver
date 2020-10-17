@@ -1,4 +1,4 @@
-from gamesys.db_refresh.db_table_utils import *
+from project_code.db_refresh.db_table_utils import *
 import csv
 import os
 
