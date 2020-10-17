@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import sqlite3
 import os
-import gamesys.db_refresh.users_lifecycle_status_view_creation as gamesys_db_refresh
+import project_code.db_refresh.users_lifecycle_status_view_creation as gamesys_db_refresh
 
 curr_path = os.getcwd()
 db_path = os.path.join(os.path.split(curr_path)[0], "db_refresh", "db", "gamesys.db")
