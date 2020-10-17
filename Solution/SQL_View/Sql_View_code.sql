@@ -30,7 +30,7 @@ curr.ACTIVITY_YEAR_MONTH,
 curr.monthly_active_count as current_active_count,
 lag(monthly_active_count) over (partition by curr.MEMBER_ID) as prev_active_count
 from (
-select MEMBER_ID,activity_year_month,sum(case when bank_type_id = 0 then 1 else 0 end) as monthly_active_count from  test123 group by MEMBER_ID,activity_year_month
+select MEMBER_ID,activity_year_month,sum(case when bank_type_id = 0 then 1 else 0 end) as monthly_active_count from  REVENUE_ANALYSIS group by MEMBER_ID,activity_year_month
 ) curr
 )a
 where not (a.current_active_count = 0 and a.prev_active_count is null)--starting from the month when he placed a real wager money
