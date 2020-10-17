@@ -34,15 +34,55 @@ The statuses are:
     •	the number of wagers placed by a given member.
   
 
-#### Your solution should also meet the following requirements:
-    •	All responses should be in JSON format.
-    •	Each RESTful endpoint should accept an optional parameter for calculating the totals for a specific month, 
-        and an optional parameter for a specific game type.
-    •	The web service can be built using either Java or Python. 
-        Ideally, we would like it to be provided with a build and dependency manager, such as Maven, 
-        with all dependencies accessible through publicly available repositories. 
-        Otherwise, please package all dependencies in your solution. Regardless of the option, 
-        please provide instructions for building and deploying the application in a README.md file.
-    •	You are not limited to any particular framework and 
-        we don't expect any data to persist beyond the lifespan of the server.
-    •	Where possible, you should write tests for the application.
+## Setup before u  do anything :-
+
+	1) I have worked it using pycharm tool and on windows machine.
+		--> Install Python (better 3+)
+		--> Pip install Flask
+	2) Download this project ZIP and Extract till 'project_code' folder to one location (for e.g..  c:\project_code)
+	
+	3) Under this folder you  will see follwing  structure ,this is how u extract and keep it
+	   ├── project_code
+	         ├── custom_api
+	         │    ├── __init__.py
+	         │    └── member_stats_api.py
+	         ├── db_refresh
+	         │     ├── db
+	         │     │   ├──gamesys.db
+             ├     │	     └──DB_Setup
+	         │     │		├──Calendar_Test_Data.csv
+	         │     │                └──Revenue_Analysis_Test_Data.csv
+	         ├     ├── __init__.py
+	         │     ├── users_lifecycle_status_view_creation.py
+	         │     └── db_table_utils.py
+             │
+	         └── __init__.py
+	
+	4) Sub folder (db_refresh):-
+		a) users_lifecycle_status_view_creation.py 
+			--> This Program Just Load CSV FILES to its tables as overwrite
+			--> Database information is  next
+		
+		b) db_table_utils.py
+			--> This  is a place  where i have defined database tables creation , drop , making an 
+			     connection and other stuff.
+			--> Here i have used SQLITE database , since its so cool , handy and so much light  which can 
+			    easily be integrated in this  usecase.
+			--> So what i have  done is i have created a Database 'gamesys.db' which is present in its 
+			    sub folder 'db'.
+			--> Within this database i have made 2 tables , 
+			     one is REVENUE_ANALYSIS and other is CALENDAR
+	
+	4) Sub folder (custom_api):-
+		a) member_stats_api.py
+			--> Place  where i have  build an APP using Flask Library.
+			--> In Here get_stats() function will decide what kind of request is been asked from API, 
+                                   It will Prepare the request parameters to appropiate SQL Query which is dynamically generated based on parameters.
+		
+	
+### TO  Run  the Webserver APP :-
+	1) python member_stats_api.py 
+    --> Once its running, go  to  browser and use the mentioned API to  get required data
+    --> Refer file "game_customer_monthly_status/Solution/RESTful_Web_Service/README.md" for API information
+		
+	
