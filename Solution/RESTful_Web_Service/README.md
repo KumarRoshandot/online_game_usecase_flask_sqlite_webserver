@@ -34,3 +34,6 @@ http://hostname:port/gamesys/
     •	http://hostname:port/gamesys?stats_oper=total_wager_count&member_id=1001&game_id=7499
     •	http://hostname:port/gamesys?stats_oper=total_wager_count&member_id=1001&year=2017&month=APRIL
     •	http://hostname:port/gamesys?stats_oper=total_wager_count&member_id=1001&year=2017&month=APRIL&game_id=7588    
+
+
+ALL RESPONSE WILL BE A JSON
