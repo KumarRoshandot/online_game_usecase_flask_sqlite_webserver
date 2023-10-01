@@ -1,4 +1,10 @@
-# game_customer_monthly_status
+# Overview
+- This is to demonstrate the integration of running a webserver for an online game business with sqlite DB .
+- we will have multiple API endpoints to cater multiple requests 
+
+
+
+## game_customer_monthly_status
 customer Status who play games online with wager money ( python + sqlite + flask )
 
 
