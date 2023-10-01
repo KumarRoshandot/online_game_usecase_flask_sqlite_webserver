@@ -1,7 +1,7 @@
 # Overview
 - This is to demonstrate the integration of running a webserver for an online game business with sqlite DB .
 - we will have multiple API endpoints to cater multiple requests
-- The input dataset is in db folders 
+- The input dataset is in [prpject_code/db_code](https://github.com/KumarRoshandot/online_game_usecase_flask_sqlite_webserver/tree/afe386f705b08d06380ead22b0e9c425dbd80d47/project_code/db_refresh/db/DB_Setup) folders 
 
 ---
 
