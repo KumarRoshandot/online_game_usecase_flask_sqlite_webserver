@@ -2,11 +2,12 @@
 - This is to demonstrate the integration of running a webserver for an online game business with sqlite DB .
 - we will have multiple API endpoints to cater multiple requests 
 
-
+---
 
 ## game_customer_monthly_status
 customer Status who play games online with wager money ( python + sqlite + flask )
 
+---
 
 ## Use case
 ### 1) Two Tables (REVENUE_ANALYSIS &  CALENDAR)
@@ -39,7 +40,7 @@ The statuses are:
     •	the total wager amount for a given member, and
     •	the number of wagers placed by a given member.
   
-
+---
 ## Setup before u  do anything :-
 
 	1) I have worked it using pycharm tool and on windows machine.
@@ -84,7 +85,7 @@ The statuses are:
 			--> Place  where i have  build an APP using Flask Library.
 			--> In Here get_stats() function will decide what kind of request is been asked from API, 
                                    It will Prepare the request parameters to appropiate SQL Query which is dynamically generated based on parameters.
-		
+---		
 	
 ### TO  Run  the Webserver APP :-
 	1) python member_stats_api.py 
