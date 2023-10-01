@@ -1,6 +1,7 @@
 # Overview
 - This is to demonstrate the integration of running a webserver for an online game business with sqlite DB .
-- we will have multiple API endpoints to cater multiple requests 
+- we will have multiple API endpoints to cater multiple requests
+- The input dataset is in db folders 
 
 ---
 
